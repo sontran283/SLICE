@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan Ly San Pham</title>
+    <link rel="stylesheet" href="./css/style.css    ">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quản lý sản phẩm</h1>
+
+        <hr>
+
+        <div class="search_add_scope">
+            <div>
+                <button class="btn btn_them" onclick="toggleForm()">Thêm sản phẩm</button>
+            </div>
+            <div>
+                <input type="search" id="input_search">
+                <button class="btn btn_tim_kiem">Tìm kiếm</button>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã sản phẩm</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Hình ảnh</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="table_body">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Tao</td>
+                    <td>12 $</td>
+                    <td>24</td>
+                    <td>
+                        <img src="./img/avatar-2.jpg" alt="img">
+                    </td>
+                    <td>
+                        <div class="action_col">
+                            <button class="btn btn_sua">Edit</button>
+                            <button class="btn btn_xoa">Delete</button>
+                        </div>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+
+        <div id="form_scope" class="hide">
+            <form action="" id="form">
+                <h3>Thêm sản phẩm</h3>
+                <div>
+                    <label for="name">Tên sản phẩm: </label> <input id="name" type="text" placeholder="Táo">
+                </div>
+                <div>
+                    <label for="price">Giá sản phẩm: </label> <input id="price" type="number" placeholder="$">
+                </div>
+                <div>
+                    <label for="count">Số lượng sản phẩm: </label> <input id="count" type="number" placeholder="10">
+                </div>
+                <div>
+                    <label for="img" id="customLabel">Hình ảnh: </label> <input id="img" type="file">
+                </div>
+                <div class="btn_them_scope">
+                    <button class="btn btn_xoa" type="button" onclick="toggleForm()">Hủy</button>
+                    <button class="btn btn_them" type="submit">Thêm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

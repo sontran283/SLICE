@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container>h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 5px 0;
+    width: 200px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn_scope {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.btn_sua {
+    background-color: #ec971f;
+}
+
+.btn_xoa {
+    background-color: rgb(236, 84, 84);
+}
+
+.btn_them {
+    background-color: #337ab7;
+}
+
+.btn_tim_kiem {
+    background-color: #5cb85c;
+}
+
+.search_add_scope {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#input_search {
+    padding: 5px;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+#form_scope {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding-top: 100px;
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: rgb(97, 201, 229);
+}
+
+form>h3 {
+    text-align: center;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+}
+
+form input {
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    width: 70%;
+}
+
+form .btn_them_scope {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.action_col {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+img {
+    width: 100px;
+}
